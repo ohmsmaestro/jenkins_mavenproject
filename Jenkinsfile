@@ -1,9 +1,5 @@
 pipeline{
-    agent {
-    docker {
-        image 'maven:latest'
-    }
-}
+    agent
     stages{
         stage('Git Clone'){
             steps{
