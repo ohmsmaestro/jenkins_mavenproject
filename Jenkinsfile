@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    tools {
+        maven 'Maven latest'
+    }
     stages{
         stage('Git Clone'){
             steps{
